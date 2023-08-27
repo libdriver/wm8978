@@ -1,0 +1,38 @@
+var wav__player_8h =
+[
+    [ "WAV_BUFFER_SIZE", "group__wav__simple__player.html#ga9a6da6d572cf36f4c8df9df32f289291", null ],
+    [ "WAV_LINK_AUDIO_DEINIT", "group__wav__simple__player.html#ga2b6cbbf282711151f9b0ef67a1ae8289", null ],
+    [ "WAV_LINK_AUDIO_INIT", "group__wav__simple__player.html#ga2cb3c16bca8d6ec25d6538d2d820ad90", null ],
+    [ "WAV_LINK_AUDIO_READ", "group__wav__simple__player.html#gab8d701e586bb32c941fc1913e3a5b221", null ],
+    [ "WAV_LINK_AUDIO_WRITE", "group__wav__simple__player.html#gab7856879373242c23df23daf88e70131", null ],
+    [ "WAV_LINK_DEBUG_PRINT", "group__wav__simple__player.html#ga8be983c63233eacb65756685bf504a7a", null ],
+    [ "WAV_LINK_DELAY_MS", "group__wav__simple__player.html#gaa239bbbd717a86cd478a76f0e0238702", null ],
+    [ "WAV_LINK_IIS_DEINIT", "group__wav__simple__player.html#gac4b0acc4c003f95bd521382fa48429c9", null ],
+    [ "WAV_LINK_IIS_INIT", "group__wav__simple__player.html#ga1f5b4ca67486d0a648fa4b331448d29f", null ],
+    [ "WAV_LINK_IIS_PAUSE", "group__wav__simple__player.html#ga890163ddc08f3868c115029417846fe8", null ],
+    [ "WAV_LINK_IIS_READ", "group__wav__simple__player.html#gac57fbdf5a754fabf6eebbf2eb67e3565", null ],
+    [ "WAV_LINK_IIS_RESUME", "group__wav__simple__player.html#gab097a4cb95a609165b99308c6fa0b5fa", null ],
+    [ "WAV_LINK_IIS_SET_FREQ", "group__wav__simple__player.html#gaef54d7fc0db450937af161bf9302b526", null ],
+    [ "WAV_LINK_IIS_STOP", "group__wav__simple__player.html#ga6234f6d795b031d145e598cf3a7b9f80", null ],
+    [ "WAV_LINK_IIS_WRITE", "group__wav__simple__player.html#gab295e07df3a5e01b944ec484c6a519e2", null ],
+    [ "WAV_LINK_INIT", "group__wav__simple__player.html#ga1be4dc0df2cd9b35b0085ef97cf3b08f", null ],
+    [ "wav_handle_t", "group__wav__simple__player.html#ga010bcac7c80bc8ece42f9861153ebc6b", null ],
+    [ "wav_header_t", "group__wav__simple__player.html#ga130f73720d10ea8bb573b03b5f1fcf26", null ],
+    [ "wav_status_t", "group__wav__simple__player.html#ga18106d964cbb04334dd0cb4c68c02694", [
+      [ "WAV_STATUS_STOP", "group__wav__simple__player.html#gga18106d964cbb04334dd0cb4c68c02694ad2fb0d36d18f7930c293e488aeb9bffc", null ],
+      [ "WAV_STATUS_PLAY", "group__wav__simple__player.html#gga18106d964cbb04334dd0cb4c68c02694a65765514e2bc6f1982d066ba06067636", null ]
+    ] ],
+    [ "wav_deinit", "group__wav__simple__player.html#gaf4fc6afb07d87d302a7e5acca5409b01", null ],
+    [ "wav_init", "group__wav__simple__player.html#gac36a6cda23011086f7520cbf22fd25a5", null ],
+    [ "wav_player_buffer_fill", "group__wav__simple__player.html#gaf6fc544b153a24f297424dca2b1ceb41", null ],
+    [ "wav_player_config", "group__wav__simple__player.html#ga11f9190dbc43a34df81489e9c0e01ac8", null ],
+    [ "wav_player_get_status", "group__wav__simple__player.html#ga75681c178489975bb51dfe60ef82bbe9", null ],
+    [ "wav_player_init", "group__wav__simple__player.html#gaf926f7e6816cef41d893f586b170a6cf", null ],
+    [ "wav_player_pause", "group__wav__simple__player.html#ga7900c97e88d666b2d53e0bc351900dd1", null ],
+    [ "wav_player_resume", "group__wav__simple__player.html#ga4fd4cb9b636a904bf71323c9d9adbdb2", null ],
+    [ "wav_player_start", "group__wav__simple__player.html#gae49af895e895945677932e180ef4469c", null ],
+    [ "wav_player_stop", "group__wav__simple__player.html#ga30d55a24dbe4b50d2199c4f8fe7fdca6", null ],
+    [ "wav_record_file_fill", "group__wav__simple__player.html#ga2e9b3426db339cdab1edf19d935ec0e7", null ],
+    [ "wav_record_start", "group__wav__simple__player.html#gaa5ccafd180c424a1b1c6d84db1310cd8", null ],
+    [ "wav_record_stop", "group__wav__simple__player.html#ga0ee6c516c98f0fdd7e75c403421667d0", null ]
+];
