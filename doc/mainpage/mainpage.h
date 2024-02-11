@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver WM8978
- * @brief     libdriver wm8978 is a full function driver of wm8978 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver WM8978 is a full function driver of WM8978 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
