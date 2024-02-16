@@ -46,7 +46,7 @@ LibDriver WM8978 is the full function driver of WM8978 launched by LibDriver.It 
 
 Reference /interface IIC, IIS platform independent template and finish your platform IIC, IIS driver.
 
-Add /src, /interface and /example to your project.
+Add the /src directory, the interface driver for your platform, and your own drivers to your project, if you want to use the default example drivers, add the /example directory to your project.
 
 ### Usage
 
