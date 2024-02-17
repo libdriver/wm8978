@@ -46,11 +46,11 @@ LibDriver WM8978 ist der von LibDriver gestartete Vollfunktionstreiber von WM897
 
 Verweisen Sie auf eine plattformunabhängige IIC, IIS-Schnittstellenvorlage und stellen Sie Ihren Plattform-IIC, IIS-Treiber fertig.
 
-Fügen Sie /src, /interface und /example zu Ihrem Projekt hinzu.
+Fügen Sie das Verzeichnis /src, den Schnittstellentreiber für Ihre Plattform und Ihre eigenen Treiber zu Ihrem Projekt hinzu. Wenn Sie die Standardbeispieltreiber verwenden möchten, fügen Sie das Verzeichnis /example zu Ihrem Projekt hinzu.
 
 ### Nutzung
 
-Sie können auf die Beispiele im Verzeichnis/example zurückgreifen, um Ihren eigenen Treiber zu vervollständigen. Wenn Sie die Standardprogrammierbeispiele verwenden möchten, erfahren Sie hier, wie Sie diese verwenden.
+Sie können auf die Beispiele im Verzeichnis /example zurückgreifen, um Ihren eigenen Treiber zu vervollständigen. Wenn Sie die Standardprogrammierbeispiele verwenden möchten, erfahren Sie hier, wie Sie diese verwenden.
 
 #### example play
 

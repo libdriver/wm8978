@@ -46,7 +46,7 @@ LibDriver WM8978是LibDriver推出的WM8978的全功能驅動，該驅動提供�
 
 參考/interface目錄下與平台無關的IIC, IIS總線模板，完成指定平台的IIC, IIS總線驅動。
 
-將/src目錄，/interface目錄和/example目錄加入工程。
+將/src目錄，您使用平臺的介面驅動和您開發的驅動加入工程，如果您想要使用默認的範例驅動，可以將/example目錄加入您的工程。
 
 ### 使用
 
