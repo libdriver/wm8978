@@ -210,6 +210,7 @@ typedef enum
  */
 typedef enum
 {
+    WM8978_GPIO1_SEL_INPUT        = 0x00,        /**< input */
     WM8978_GPIO1_SEL_TEMP_OK      = 0x02,        /**< temp ok */
     WM8978_GPIO1_SEL_AMUTE_ACTIVE = 0x03,        /**< amute active */
     WM8978_GPIO1_SEL_PLL_CLK      = 0x04,        /**< pll clk */

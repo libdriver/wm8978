@@ -157,6 +157,7 @@ var driver__wm8978_8h =
       [ "WM8978_EQUALISER_APPLIED_TO_DAC", "group__wm8978__base__driver.html#ggaa23b562b0f94ca5b4ff348f2e0a5e061af1e5817badfd109ea5fa0c6628952d82", null ]
     ] ],
     [ "wm8978_gpio1_sel_t", "group__wm8978__base__driver.html#ga8504d754d9702dcccfde99a056fdd4ad", [
+      [ "WM8978_GPIO1_SEL_INPUT", "group__wm8978__base__driver.html#gga8504d754d9702dcccfde99a056fdd4ada94b7963fc0295c274d85c386fcebf1c2", null ],
       [ "WM8978_GPIO1_SEL_TEMP_OK", "group__wm8978__base__driver.html#gga8504d754d9702dcccfde99a056fdd4ada8e21a153205471ed4135b2dd8d83fbd3", null ],
       [ "WM8978_GPIO1_SEL_AMUTE_ACTIVE", "group__wm8978__base__driver.html#gga8504d754d9702dcccfde99a056fdd4adaa1ab73cd04658e17e513181d2a8076dc", null ],
       [ "WM8978_GPIO1_SEL_PLL_CLK", "group__wm8978__base__driver.html#gga8504d754d9702dcccfde99a056fdd4adab74b731bfc4ee5b7e9f228372a9265b5", null ],
