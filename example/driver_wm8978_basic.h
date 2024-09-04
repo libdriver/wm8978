@@ -78,7 +78,7 @@ extern "C"{
 #define WM8978_BASIC_DEFAULT_SLOW_CLOCK                                                   WM8978_BOOL_FALSE                            /**< disable slow clock */
 #define WM8978_BASIC_DEFAULT_PLL_DIV                                                      WM8978_PLL_DIV_BY_1                          /**< div 1 */
 #define WM8978_BASIC_DEFAULT_GPIO1_POLARITY                                               WM8978_POLARITY_NORMAL                       /**< polarity normal */
-#define WM8978_BASIC_DEFAULT_GPIO1_SELECT                                                 WM8978_GPIO1_SEL_LOGIC_0                     /**< logic 0 */
+#define WM8978_BASIC_DEFAULT_GPIO1_SELECT                                                 WM8978_GPIO1_SEL_INPUT                       /**< input */
 #define WM8978_BASIC_DEFAULT_VMID_1                                                       WM8978_BOOL_TRUE                             /**< enable vmid 1 */
 #define WM8978_BASIC_DEFAULT_VMID_0                                                       WM8978_BOOL_TRUE                             /**< enable vmid 0 */
 #define WM8978_BASIC_DEFAULT_JACK_DETECTION                                               WM8978_BOOL_FALSE                            /**< disable jack detection */

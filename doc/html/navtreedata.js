@@ -55,8 +55,8 @@ var NAVTREEINDEX =
 "group__wm8978__base__driver.html#ga66cf24cf8d15fedfd44eb0a9d469e8fc",
 "group__wm8978__base__driver.html#gabdbf6dc8934a644da135313389ccb3cc",
 "group__wm8978__base__driver.html#gga35989b4e0efc16ebbe29243c39a8b9eead3eaf5cad59a61d51a1def7aa6cb1dec",
-"group__wm8978__driver.html",
-"group__wm8978__example__driver.html#gadfef2180f1096a3ee5e28bac35b7eba0"
+"group__wm8978__base__driver.html#ggaf62eebd539a75c970e976a9f2e8538b6ab87e6dd022d7c78160f4be6d33329a9b",
+"group__wm8978__example__driver.html#gadf38a6d274c73c5a0a41f0cf63d3a822"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

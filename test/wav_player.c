@@ -318,7 +318,7 @@ uint8_t wav_player_init(wav_handle_t *handle, char *path)
                                ((uint32_t)(buf[43]) << 8) |
                                ((uint32_t)(buf[44]) << 16) |
                                ((uint32_t)(buf[45]) << 24);     /* set sub chunk _size */
-        handle->pos += 46;                                      /* add 46 offset */
+        handle->pos += 44;                                      /* add 44 offset */
     }
     else
     {
