@@ -118,127 +118,127 @@ typedef struct wav_handle_s
 
 /**
  * @brief     initialize wav_handle_t structure
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] STRUCTURE is wav_handle_t
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] STRUCTURE wav_handle_t
  * @note      none
  */
 #define WAV_LINK_INIT(HANDLE, STRUCTURE)      memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link audio_init function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an audio_init function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an audio_init function address
  * @note      none
  */
 #define WAV_LINK_AUDIO_INIT(HANDLE, FUC)     (HANDLE)->audio_init = FUC
 
 /**
  * @brief     link audio_deinit function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an audio_deinit function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an audio_deinit function address
  * @note      none
  */
 #define WAV_LINK_AUDIO_DEINIT(HANDLE, FUC)   (HANDLE)->audio_deinit = FUC
 
 /**
  * @brief     link audio_read function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an audio_read function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an audio_read function address
  * @note      none
  */
 #define WAV_LINK_AUDIO_READ(HANDLE, FUC)     (HANDLE)->audio_read = FUC
 
 /**
  * @brief     link audio_write function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an audio_write function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an audio_write function address
  * @note      none
  */
 #define WAV_LINK_AUDIO_WRITE(HANDLE, FUC)    (HANDLE)->audio_write = FUC
 
 /**
  * @brief     link iis_init function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_init function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_init function address
  * @note      none
  */
 #define WAV_LINK_IIS_INIT(HANDLE, FUC)       (HANDLE)->iis_init = FUC
 
 /**
  * @brief     link iis_deinit function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_deinit function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_deinit function address
  * @note      none
  */
 #define WAV_LINK_IIS_DEINIT(HANDLE, FUC)     (HANDLE)->iis_deinit = FUC
 
 /**
  * @brief     link iis_stop function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_stop function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_stop function address
  * @note      none
  */
 #define WAV_LINK_IIS_STOP(HANDLE, FUC)       (HANDLE)->iis_stop = FUC
 
 /**
  * @brief     link iis_pause function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_pause function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_pause function address
  * @note      none
  */
 #define WAV_LINK_IIS_PAUSE(HANDLE, FUC)      (HANDLE)->iis_pause = FUC
 
 /**
  * @brief     link iis_resume function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_resume function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_resume function address
  * @note      none
  */
 #define WAV_LINK_IIS_RESUME(HANDLE, FUC)     (HANDLE)->iis_resume = FUC
 
 /**
  * @brief     link iis_set_freq function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_set_freq function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_set_freq function address
  * @note      none
  */
 #define WAV_LINK_IIS_SET_FREQ(HANDLE, FUC)   (HANDLE)->iis_set_freq = FUC
 
 /**
  * @brief     link iis_write function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_write function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_write function address
  * @note      none
  */
 #define WAV_LINK_IIS_WRITE(HANDLE, FUC)      (HANDLE)->iis_write = FUC
 
 /**
  * @brief     link iis_read function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to an iis_write function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to an iis_write function address
  * @note      none
  */
 #define WAV_LINK_IIS_READ(HANDLE, FUC)       (HANDLE)->iis_read = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define WAV_LINK_DELAY_MS(HANDLE, FUC)       (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to a wav handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to a wav handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define WAV_LINK_DEBUG_PRINT(HANDLE, FUC)    (HANDLE)->debug_print = FUC
 
 /**
  * @brief     initialize the wav
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -249,7 +249,7 @@ uint8_t wav_init(wav_handle_t *handle);
 
 /**
  * @brief     wav deinit
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -261,8 +261,8 @@ uint8_t wav_deinit(wav_handle_t *handle);
 
 /**
  * @brief     initialize the wav player
- * @param[in] *handle points to a wav handle structure
- * @param[in] *path points to a path buffer
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 play failed
@@ -275,8 +275,8 @@ uint8_t wav_player_init(wav_handle_t *handle, char *path);
 
 /**
  * @brief     wav player buffer fill
- * @param[in] *handle points to a wav handle structure
- * @param[in] index is the fill index
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] index fill index
  * @return    status code
  *            - 0 success
  *            - 1 fill failed
@@ -289,8 +289,8 @@ uint8_t wav_player_buffer_fill(wav_handle_t *handle, uint8_t index);
 
 /**
  * @brief     wav record file fill
- * @param[in] *handle points to a wav handle structure
- * @param[in] index is the fill index
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] index fill index
  * @return    status code
  *            - 0 success
  *            - 1 fill failed
@@ -303,8 +303,8 @@ uint8_t wav_record_file_fill(wav_handle_t *handle, uint8_t index);
 
 /**
  * @brief      wav get status
- * @param[in]  *handle points to a wav handle structure
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to a wav handle structure
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get status failed
@@ -316,13 +316,13 @@ uint8_t wav_player_get_status(wav_handle_t *handle, wav_status_t *status);
 
 /**
  * @brief     wav player config
- * @param[in] *handle points to a wav handle structure
- * @param[in] standard is the iis standard
- * @param[in] mode is the iis mode
- * @param[in] polarity is the iis polarity
- * @param[in] format is the iis format
- * @param[in] enable is the mclk output
- * @param[in] freq is the set freq
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] standard iis standard
+ * @param[in] mode iis mode
+ * @param[in] polarity iis polarity
+ * @param[in] format iis format
+ * @param[in] enable mclk output
+ * @param[in] freq set freq
  * @return    status code
  *            - 0 success
  *            - 1 config failed
@@ -336,9 +336,9 @@ uint8_t wav_player_config(wav_handle_t *handle, uint32_t standard,
 
 /**
  * @brief     wav record start
- * @param[in] *handle points to a wav handle structure
- * @param[in] sample_rate is the sample rate
- * @param[in] *path points to a path buffer
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] sample_rate sample rate
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 start failed
@@ -351,7 +351,7 @@ uint8_t wav_record_start(wav_handle_t *handle, uint32_t sample_rate, char *path)
 
 /**
  * @brief     wav record stop
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop failed
@@ -364,7 +364,7 @@ uint8_t wav_record_stop(wav_handle_t *handle);
 
 /**
  * @brief     wav player start
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 start failed
@@ -377,7 +377,7 @@ uint8_t wav_player_start(wav_handle_t *handle);
 
 /**
  * @brief     wav player stop
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop failed
@@ -390,7 +390,7 @@ uint8_t wav_player_stop(wav_handle_t *handle);
 
 /**
  * @brief     wav player pause
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 pause failed
@@ -403,7 +403,7 @@ uint8_t wav_player_pause(wav_handle_t *handle);
 
 /**
  * @brief     wav player resume
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 resume failed

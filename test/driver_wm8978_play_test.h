@@ -53,7 +53,7 @@ extern "C"{
 
 /**
  * @brief     play buffer fill
- * @param[in] index is the buffer index
+ * @param[in] index buffer index
  * @return    status code
  *            - 0 success
  *            - 1 fill failed
@@ -63,7 +63,7 @@ uint8_t wm8978_play_buffer_fill(uint8_t index);
 
 /**
  * @brief     play test
- * @param[in] *path points to a path buffer
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 test failed
@@ -73,7 +73,7 @@ uint8_t wm8978_play_test(char *path);
 
 /**
  * @brief  play get handle
- * @return points to a wav handle
+ * @return pointer to a wav handle
  * @note   none
  */
 wav_handle_t *wm8978_play_get_handle(void);

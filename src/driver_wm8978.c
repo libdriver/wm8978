@@ -126,9 +126,9 @@ static const uint16_t gsc_wm8978_init_reg[58] =
 
 /**
  * @brief      read config
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the iic register address
- * @param[out] *config points to a config buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg iic register address
+ * @param[out] *config pointer to a config buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -152,9 +152,9 @@ static uint8_t a_wm8978_iic_read(wm8978_handle_t *handle, uint8_t reg, uint16_t 
 
 /**
  * @brief     write config
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] reg is the iic register address
- * @param[in] config is the write config
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] reg iic register address
+ * @param[in] config written config
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -177,7 +177,7 @@ static uint8_t a_wm8978_iic_write(wm8978_handle_t *handle, uint8_t reg, uint16_t
 
 /**
  * @brief     soft reset
- * @param[in] *handle points to a wm8978 handle structure
+ * @param[in] *handle pointer to a wm8978 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 soft reset failed
@@ -214,8 +214,8 @@ uint8_t wm8978_soft_reset(wm8978_handle_t *handle)
 
 /**
  * @brief     enable or disable dc buffer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dc buffer failed
@@ -259,8 +259,8 @@ uint8_t wm8978_set_dc_buffer(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable out4 mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out4 mixer failed
@@ -304,8 +304,8 @@ uint8_t wm8978_set_out4_mixer(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable out3 mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out3 mixer failed
@@ -349,8 +349,8 @@ uint8_t wm8978_set_out3_mixer(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable pll
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set pll failed
@@ -394,8 +394,8 @@ uint8_t wm8978_set_pll(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable microphone bias
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set microphone bias failed
@@ -439,8 +439,8 @@ uint8_t wm8978_set_microphone_bias(wm8978_handle_t *handle, wm8978_bool_t enable
 
 /**
  * @brief     enable or disable analogue amplifier bias
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set analogue amplifier bias failed
@@ -484,8 +484,8 @@ uint8_t wm8978_set_analogue_amplifier_bias(wm8978_handle_t *handle, wm8978_bool_
 
 /**
  * @brief     enable or disable unused input output tie off buffer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set unused input output tie off buffer failed
@@ -529,8 +529,8 @@ uint8_t wm8978_set_unused_input_output_tie_off_buffer(wm8978_handle_t *handle, w
 
 /**
  * @brief     set reference impedance
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] impedance is the set reference impedance 
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] impedance set reference impedance 
  * @return    status code
  *            - 0 success
  *            - 1 set reference impedance failed
@@ -574,8 +574,8 @@ uint8_t wm8978_set_reference_impedance(wm8978_handle_t *handle, wm8978_impedance
 
 /**
  * @brief     enable or disable right out1
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right out1 failed
@@ -619,8 +619,8 @@ uint8_t wm8978_set_right_out1(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable left out1
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left out1 failed
@@ -664,8 +664,8 @@ uint8_t wm8978_set_left_out1(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable sleep
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set sleep failed
@@ -709,8 +709,8 @@ uint8_t wm8978_set_sleep(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable right channel input boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input boost failed
@@ -754,8 +754,8 @@ uint8_t wm8978_set_right_channel_input_boost(wm8978_handle_t *handle, wm8978_boo
 
 /**
  * @brief     enable or disable left channel input boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input boost failed
@@ -799,8 +799,8 @@ uint8_t wm8978_set_left_channel_input_boost(wm8978_handle_t *handle, wm8978_bool
 
 /**
  * @brief     enable or disable right channel input pga
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga failed
@@ -844,8 +844,8 @@ uint8_t wm8978_set_right_channel_input_pga(wm8978_handle_t *handle, wm8978_bool_
 
 /**
  * @brief     enable or disable left channel input pga
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga failed
@@ -889,8 +889,8 @@ uint8_t wm8978_set_left_channel_input_pga(wm8978_handle_t *handle, wm8978_bool_t
 
 /**
  * @brief     enable or disable right channel adc
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel adc failed
@@ -934,8 +934,8 @@ uint8_t wm8978_set_right_channel_adc(wm8978_handle_t *handle, wm8978_bool_t enab
 
 /**
  * @brief     enable or disable left channel adc
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel adc failed
@@ -979,8 +979,8 @@ uint8_t wm8978_set_left_channel_adc(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief     enable or disable out4
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out4 failed
@@ -1024,8 +1024,8 @@ uint8_t wm8978_set_out4(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable out3
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out3 failed
@@ -1069,8 +1069,8 @@ uint8_t wm8978_set_out3(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable left out2
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left out2 failed
@@ -1114,8 +1114,8 @@ uint8_t wm8978_set_left_out2(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable right out2
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right out2 failed
@@ -1159,8 +1159,8 @@ uint8_t wm8978_set_right_out2(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable right output channel mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right output channel mixer failed
@@ -1204,8 +1204,8 @@ uint8_t wm8978_set_right_output_channel_mixer(wm8978_handle_t *handle, wm8978_bo
 
 /**
  * @brief     enable or disable left output channel mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left output channel mixer failed
@@ -1249,8 +1249,8 @@ uint8_t wm8978_set_left_output_channel_mixer(wm8978_handle_t *handle, wm8978_boo
 
 /**
  * @brief     enable or disable right channel dac
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel dac failed
@@ -1294,8 +1294,8 @@ uint8_t wm8978_set_right_channel_dac(wm8978_handle_t *handle, wm8978_bool_t enab
 
 /**
  * @brief     enable or disable left channel dac
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel dac failed
@@ -1339,8 +1339,8 @@ uint8_t wm8978_set_left_channel_dac(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief     set bclk polarity
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] polarity is the bclk polarity
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] polarity bclk polarity
  * @return    status code
  *            - 0 success
  *            - 1 set bclk polarity failed
@@ -1384,8 +1384,8 @@ uint8_t wm8978_set_bclk_polarity(wm8978_handle_t *handle, wm8978_polarity_t pola
 
 /**
  * @brief     set lrclk polarity
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] polarity is the lrclk polarity
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] polarity lrclk polarity
  * @return    status code
  *            - 0 success
  *            - 1 set lrclk polarity failed
@@ -1429,8 +1429,8 @@ uint8_t wm8978_set_lrclk_polarity(wm8978_handle_t *handle, wm8978_polarity_t pol
 
 /**
  * @brief     set word length
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] word_length is the iis word length
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] word_length iis word length
  * @return    status code
  *            - 0 success
  *            - 1 set word length failed
@@ -1474,8 +1474,8 @@ uint8_t wm8978_set_word_length(wm8978_handle_t *handle, wm8978_word_length_t wor
 
 /**
  * @brief     set data format
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] format is the data format
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] format data format
  * @return    status code
  *            - 0 success
  *            - 1 set data format failed
@@ -1519,8 +1519,8 @@ uint8_t wm8978_set_data_format(wm8978_handle_t *handle, wm8978_data_format_t for
 
 /**
  * @brief     set dac appear
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] appear is the dac appear side
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] appear dac appear side
  * @return    status code
  *            - 0 success
  *            - 1 set dac appear failed
@@ -1564,8 +1564,8 @@ uint8_t wm8978_set_dac_appear(wm8978_handle_t *handle, wm8978_appear_t appear)
 
 /**
  * @brief     set adc appear
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] appear is the adc appear side
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] appear adc appear side
  * @return    status code
  *            - 0 success
  *            - 1 set adc appear failed
@@ -1609,8 +1609,8 @@ uint8_t wm8978_set_adc_appear(wm8978_handle_t *handle, wm8978_appear_t appear)
 
 /**
  * @brief     set channel
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] channel is the audio channel
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] channel audio channel
  * @return    status code
  *            - 0 success
  *            - 1 set channel failed
@@ -1654,8 +1654,8 @@ uint8_t wm8978_set_channel(wm8978_handle_t *handle, wm8978_channel_t channel)
 
 /**
  * @brief     enable or disable companding 8bit mode
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set companding 8bit mode failed
@@ -1699,8 +1699,8 @@ uint8_t wm8978_set_companding_8bit_mode(wm8978_handle_t *handle, wm8978_bool_t e
 
 /**
  * @brief     set dac companding
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] companding is the dac companding
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] companding dac companding
  * @return    status code
  *            - 0 success
  *            - 1 set dac companding failed
@@ -1744,8 +1744,8 @@ uint8_t wm8978_set_dac_companding(wm8978_handle_t *handle, wm8978_companding_t c
 
 /**
  * @brief     set adc companding
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] companding is the adc companding
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] companding adc companding
  * @return    status code
  *            - 0 success
  *            - 1 set adc companding failed
@@ -1789,8 +1789,8 @@ uint8_t wm8978_set_adc_companding(wm8978_handle_t *handle, wm8978_companding_t c
 
 /**
  * @brief     enable or disable loopback
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set loopback failed
@@ -1834,8 +1834,8 @@ uint8_t wm8978_set_loopback(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set clksel
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] clksel is the set clksel
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] clksel set clksel
  * @return    status code
  *            - 0 success
  *            - 1 set clksel failed
@@ -1879,8 +1879,8 @@ uint8_t wm8978_set_clksel(wm8978_handle_t *handle, wm8978_clksel_t clksel)
 
 /**
  * @brief     set mclk div
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] d is the mclk div
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] d mclk div
  * @return    status code
  *            - 0 success
  *            - 1 set mclk div failed
@@ -1924,8 +1924,8 @@ uint8_t wm8978_set_mclk_div(wm8978_handle_t *handle, wm8978_mclk_div_t d)
 
 /**
  * @brief     set bclk div
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] d is the bclk div
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] d bclk div
  * @return    status code
  *            - 0 success
  *            - 1 set bclk div failed
@@ -1969,8 +1969,8 @@ uint8_t wm8978_set_bclk_div(wm8978_handle_t *handle, wm8978_bclk_div_t d)
 
 /**
  * @brief     set clock mode
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] mode is the clock mode
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] mode clock mode
  * @return    status code
  *            - 0 success
  *            - 1 set clock mode failed
@@ -2014,8 +2014,8 @@ uint8_t wm8978_set_clock_mode(wm8978_handle_t *handle, wm8978_clock_mode_t mode)
 
 /**
  * @brief     set approximate sample rate
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] sample is the approximate sample rate
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] sample approximate sample rate
  * @return    status code
  *            - 0 success
  *            - 1 set approximate sample rate failed
@@ -2059,8 +2059,8 @@ uint8_t wm8978_set_approximate_sample_rate(wm8978_handle_t *handle, wm8978_appro
 
 /**
  * @brief     enable or disable slow clock
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set slow clock failed
@@ -2104,8 +2104,8 @@ uint8_t wm8978_set_slow_clock(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set pll div
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] d is the pll div
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] d pll div
  * @return    status code
  *            - 0 success
  *            - 1 set pll div failed
@@ -2149,8 +2149,8 @@ uint8_t wm8978_set_pll_div(wm8978_handle_t *handle, wm8978_pll_div_t d)
 
 /**
  * @brief     set gpio1 polarity
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] polarity is the gpio1 polarity
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] polarity gpio1 polarity
  * @return    status code
  *            - 0 success
  *            - 1 set gpio1 polarity failed
@@ -2194,8 +2194,8 @@ uint8_t wm8978_set_gpio1_polarity(wm8978_handle_t *handle, wm8978_polarity_t pol
 
 /**
  * @brief     set gpio1 select
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] sel is the gpio1 select
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] sel gpio1 select
  * @return    status code
  *            - 0 success
  *            - 1 set gpio1 select failed
@@ -2239,8 +2239,8 @@ uint8_t wm8978_set_gpio1_select(wm8978_handle_t *handle, wm8978_gpio1_sel_t sel)
 
 /**
  * @brief     enable or disable vmid 1
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set vmid 1 failed
@@ -2284,8 +2284,8 @@ uint8_t wm8978_set_vmid_1(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable vmid 0
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set vmid 0 failed
@@ -2329,8 +2329,8 @@ uint8_t wm8978_set_vmid_0(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable jack detection
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set jack detection failed
@@ -2374,8 +2374,8 @@ uint8_t wm8978_set_jack_detection(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set jack gpio
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] sel is the jack gpio select
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] sel jack gpio select
  * @return    status code
  *            - 0 success
  *            - 1 set jack gpio failed
@@ -2419,8 +2419,8 @@ uint8_t wm8978_set_jack_gpio(wm8978_handle_t *handle, wm8978_jack_sel_t sel)
 
 /**
  * @brief     enable or disable soft mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set soft mute failed
@@ -2464,8 +2464,8 @@ uint8_t wm8978_set_soft_mute(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set dac oversample rate
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] rate is the dac oversample rate
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] rate dac oversample rate
  * @return    status code
  *            - 0 success
  *            - 1 set dac oversample rate failed
@@ -2509,8 +2509,8 @@ uint8_t wm8978_set_dac_oversample_rate(wm8978_handle_t *handle, wm8978_dac_overs
 
 /**
  * @brief     enable or disable amute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set amute failed
@@ -2554,8 +2554,8 @@ uint8_t wm8978_set_amute(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set right dac output polarity
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] polarity is the right dac output polarity
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] polarity right dac output polarity
  * @return    status code
  *            - 0 success
  *            - 1 set right dac output polarity failed
@@ -2599,8 +2599,8 @@ uint8_t wm8978_set_right_dac_output_polarity(wm8978_handle_t *handle, wm8978_pol
 
 /**
  * @brief     set left dac output polarity
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] polarity is the left dac output polarity
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] polarity left dac output polarity
  * @return    status code
  *            - 0 success
  *            - 1 set left dac output polarity failed
@@ -2644,9 +2644,9 @@ uint8_t wm8978_set_left_dac_output_polarity(wm8978_handle_t *handle, wm8978_pola
 
 /**
  * @brief     set dac left volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value, update once flag
- * @param[in] volume is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value, update once flag
+ * @param[in] volume set volume
  * @return    status code
  *            - 0 success
  *            - 1 set dac left volume failed
@@ -2682,9 +2682,9 @@ uint8_t wm8978_set_dac_left_volume(wm8978_handle_t *handle, wm8978_bool_t enable
 
 /**
  * @brief     set dac right volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value, update once flag
- * @param[in] volume is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value, update once flag
+ * @param[in] volume set volume
  * @return    status code
  *            - 0 success
  *            - 1 set dac right volume failed
@@ -2720,9 +2720,9 @@ uint8_t wm8978_set_dac_right_volume(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief     set jack logic 1
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] jack is the jack operation
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] jack jack operation
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set jack logic 1 failed
@@ -2772,9 +2772,9 @@ uint8_t wm8978_set_jack_logic_1(wm8978_handle_t *handle, wm8978_jack_t jack, wm8
 
 /**
  * @brief     set jack logic 0
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] jack is the jack operation
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] jack jack operation
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set jack logic 0 failed
@@ -2824,8 +2824,8 @@ uint8_t wm8978_set_jack_logic_0(wm8978_handle_t *handle, wm8978_jack_t jack, wm8
 
 /**
  * @brief     enable or disable high pass filter
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set high pass filter failed
@@ -2869,8 +2869,8 @@ uint8_t wm8978_set_high_pass_filter(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief     set chip mode
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] mode is the set mode
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] mode set mode
  * @return    status code
  *            - 0 success
  *            - 1 set mode failed
@@ -2914,8 +2914,8 @@ uint8_t wm8978_set_mode(wm8978_handle_t *handle, wm8978_mode_t mode)
 
 /**
  * @brief     set high pass filter cut off
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] cut is the high pass filter cut off
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] cut high pass filter cut off
  * @return    status code
  *            - 0 success
  *            - 1 set high pass filter cut off failed
@@ -2959,8 +2959,8 @@ uint8_t wm8978_set_high_pass_filter_cut_off(wm8978_handle_t *handle, wm8978_high
 
 /**
  * @brief     set adc oversample rate
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] rate is the adc oversample rate
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] rate adc oversample rate
  * @return    status code
  *            - 0 success
  *            - 1 set adc oversample rate failed
@@ -3004,8 +3004,8 @@ uint8_t wm8978_set_adc_oversample_rate(wm8978_handle_t *handle, wm8978_adc_overs
 
 /**
  * @brief     set adc right channel polarity
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] polarity is the adc polarity
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] polarity adc polarity
  * @return    status code
  *            - 0 success
  *            - 1 set adc right channel polarity failed
@@ -3049,8 +3049,8 @@ uint8_t wm8978_set_adc_right_channel_polarity(wm8978_handle_t *handle, wm8978_po
 
 /**
  * @brief     set adc left channel polarity
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] polarity is the adc polarity
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] polarity adc polarity
  * @return    status code
  *            - 0 success
  *            - 1 set adc left channel polarity failed
@@ -3094,9 +3094,9 @@ uint8_t wm8978_set_adc_left_channel_polarity(wm8978_handle_t *handle, wm8978_pol
 
 /**
  * @brief     set adc left volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value, update once flag
- * @param[in] volume is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value, update once flag
+ * @param[in] volume set volume
  * @return    status code
  *            - 0 success
  *            - 1 set adc left volume failed
@@ -3132,9 +3132,9 @@ uint8_t wm8978_set_adc_left_volume(wm8978_handle_t *handle, wm8978_bool_t enable
 
 /**
  * @brief     set adc right volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value, update once flag
- * @param[in] volume is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value, update once flag
+ * @param[in] volume set volume
  * @return    status code
  *            - 0 success
  *            - 1 set adc right volume failed
@@ -3170,9 +3170,9 @@ uint8_t wm8978_set_adc_right_volume(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief      convert the volume data to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the volume db
- * @param[out] *reg points to a volume raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db volume db
+ * @param[out] *reg pointer to a volume raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3197,9 +3197,9 @@ uint8_t wm8978_volume_convert_to_register(wm8978_handle_t *handle, float db, uin
 
 /**
  * @brief      convert the volume register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the volume raw data
- * @param[out] *db points to a volume real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg volume raw data
+ * @param[out] *db pointer to a volume real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3224,8 +3224,8 @@ uint8_t wm8978_volume_convert_to_data(wm8978_handle_t *handle, uint8_t reg, floa
 
 /**
  * @brief     set equaliser apply
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] equaliser is the set equaliser
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] equaliser set equaliser
  * @return    status code
  *            - 0 success
  *            - 1 set equaliser apply failed
@@ -3269,8 +3269,8 @@ uint8_t wm8978_set_equaliser_apply(wm8978_handle_t *handle, wm8978_equaliser_t e
 
 /**
  * @brief     set eq1 cut off
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] cut_off is the cut off freq
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] cut_off cut off freq
  * @return    status code
  *            - 0 success
  *            - 1 set eq1 cut off failed
@@ -3314,8 +3314,8 @@ uint8_t wm8978_set_eq1_cut_off(wm8978_handle_t *handle, wm8978_eq1_band_cut_off_
 
 /**
  * @brief     set eq1 gain
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] gain is the eq1 gain
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] gain eq1 gain
  * @return    status code
  *            - 0 success
  *            - 1 set eq1 gain failed
@@ -3366,8 +3366,8 @@ uint8_t wm8978_set_eq1_gain(wm8978_handle_t *handle, uint8_t gain)
 
 /**
  * @brief     set eq2 bandwidth
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] width is the set bandwidth
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] width set bandwidth
  * @return    status code
  *            - 0 success
  *            - 1 set eq2 bandwidth failed
@@ -3411,8 +3411,8 @@ uint8_t wm8978_set_eq2_bandwidth(wm8978_handle_t *handle, wm8978_eq_bandwidth_t 
 
 /**
  * @brief     set eq2 centre freq
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] freq is the centre freq
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] freq centre freq
  * @return    status code
  *            - 0 success
  *            - 1 set eq2 centre freq failed
@@ -3456,8 +3456,8 @@ uint8_t wm8978_set_eq2_centre_freq(wm8978_handle_t *handle, wm8978_eq2_band_cent
 
 /**
  * @brief     set eq2 gain
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] gain is the eq2 gain
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] gain eq2 gain
  * @return    status code
  *            - 0 success
  *            - 1 set eq2 gain failed
@@ -3508,8 +3508,8 @@ uint8_t wm8978_set_eq2_gain(wm8978_handle_t *handle, uint8_t gain)
 
 /**
  * @brief     set eq3 bandwidth
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] width is the set bandwidth
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] width set bandwidth
  * @return    status code
  *            - 0 success
  *            - 1 set eq3 bandwidth failed
@@ -3553,8 +3553,8 @@ uint8_t wm8978_set_eq3_bandwidth(wm8978_handle_t *handle, wm8978_eq_bandwidth_t 
 
 /**
  * @brief     set eq3 centre freq
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] freq is the centre freq
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] freq centre freq
  * @return    status code
  *            - 0 success
  *            - 1 set eq3 centre freq failed
@@ -3598,8 +3598,8 @@ uint8_t wm8978_set_eq3_centre_freq(wm8978_handle_t *handle, wm8978_eq3_band_cent
 
 /**
  * @brief     set eq3 gain
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] gain is the eq3 gain
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] gain eq3 gain
  * @return    status code
  *            - 0 success
  *            - 1 set eq3 gain failed
@@ -3650,8 +3650,8 @@ uint8_t wm8978_set_eq3_gain(wm8978_handle_t *handle, uint8_t gain)
 
 /**
  * @brief     set eq4 bandwidth
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] width is the set bandwidth
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] width set bandwidth
  * @return    status code
  *            - 0 success
  *            - 1 set eq4 bandwidth failed
@@ -3695,8 +3695,8 @@ uint8_t wm8978_set_eq4_bandwidth(wm8978_handle_t *handle, wm8978_eq_bandwidth_t 
 
 /**
  * @brief     set eq4 centre freq
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] freq is the centre freq
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] freq centre freq
  * @return    status code
  *            - 0 success
  *            - 1 set eq4 centre freq failed
@@ -3740,8 +3740,8 @@ uint8_t wm8978_set_eq4_centre_freq(wm8978_handle_t *handle, wm8978_eq4_band_cent
 
 /**
  * @brief     set eq4 gain
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] gain is the eq4 gain
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] gain eq4 gain
  * @return    status code
  *            - 0 success
  *            - 1 set eq4 gain failed
@@ -3792,8 +3792,8 @@ uint8_t wm8978_set_eq4_gain(wm8978_handle_t *handle, uint8_t gain)
 
 /**
  * @brief     set eq5 cut off
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] cut_off is the cut off freq
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] cut_off cut off freq
  * @return    status code
  *            - 0 success
  *            - 1 set eq5 cut off failed
@@ -3837,8 +3837,8 @@ uint8_t wm8978_set_eq5_cut_off(wm8978_handle_t *handle, wm8978_eq5_band_cut_off_
 
 /**
  * @brief     set eq5 gain
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] gain is the eq5 gain
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] gain eq5 gain
  * @return    status code
  *            - 0 success
  *            - 1 set eq5 gain failed
@@ -3889,9 +3889,9 @@ uint8_t wm8978_set_eq5_gain(wm8978_handle_t *handle, uint8_t gain)
 
 /**
  * @brief      convert the eq gain to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the eq gain in db
- * @param[out] *reg points to an eq gain raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db eq gain in db
+ * @param[out] *reg pointer to an eq gain raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3916,9 +3916,9 @@ uint8_t wm8978_eq_gain_convert_to_register(wm8978_handle_t *handle, int8_t db, u
 
 /**
  * @brief      convert the eq gain register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the volume raw data
- * @param[out] *db points to an eq gain real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg volume raw data
+ * @param[out] *db pointer to an eq gain real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3943,8 +3943,8 @@ uint8_t wm8978_eq_gain_convert_to_data(wm8978_handle_t *handle, uint8_t reg, int
 
 /**
  * @brief     enable or disable dac digital limiter
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dac digital limiter failed
@@ -3988,8 +3988,8 @@ uint8_t wm8978_set_dac_digital_limiter(wm8978_handle_t *handle, wm8978_bool_t en
 
 /**
  * @brief     set dac limiter decay
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] decay is the dac limiter decay
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] decay dac limiter decay
  * @return    status code
  *            - 0 success
  *            - 1 set dac limiter decay failed
@@ -4033,8 +4033,8 @@ uint8_t wm8978_set_dac_limiter_decay(wm8978_handle_t *handle, wm8978_dac_limiter
 
 /**
  * @brief     set dac limiter attack
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] attack is the dac limiter attack
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] attack dac limiter attack
  * @return    status code
  *            - 0 success
  *            - 1 set dac limiter attack failed
@@ -4078,8 +4078,8 @@ uint8_t wm8978_set_dac_limiter_attack(wm8978_handle_t *handle, wm8978_dac_limite
 
 /**
  * @brief     set dac limiter level
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] level is the dac limiter level
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] level dac limiter level
  * @return    status code
  *            - 0 success
  *            - 1 set dac limiter level failed
@@ -4123,8 +4123,8 @@ uint8_t wm8978_set_dac_limiter_level(wm8978_handle_t *handle, wm8978_dac_limiter
 
 /**
  * @brief     set dac limiter volume boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] db is the set db
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] db set db
  * @return    status code
  *            - 0 success
  *            - 1 set dac limiter volume boost failed
@@ -4175,8 +4175,8 @@ uint8_t wm8978_set_dac_limiter_volume_boost(wm8978_handle_t *handle, uint8_t db)
 
 /**
  * @brief     enable or disable notch filter
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set notch filter failed
@@ -4220,9 +4220,9 @@ uint8_t wm8978_set_notch_filter(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set notch filter a0 coefficient bit13 - bit7
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] update_once is a bool value
- * @param[in] coefficient is the set coefficient
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] update_once bool value
+ * @param[in] coefficient set coefficient
  * @return    status code
  *            - 0 success
  *            - 1 set notch filter a0 coefficient failed
@@ -4275,9 +4275,9 @@ uint8_t wm8978_set_notch_filter_a0_coefficient_bit_13_7(wm8978_handle_t *handle,
 
 /**
  * @brief     set notch filter a0 coefficient bit6 - bit0
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] update_once is a bool value
- * @param[in] coefficient is the set coefficient
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] update_once bool value
+ * @param[in] coefficient set coefficient
  * @return    status code
  *            - 0 success
  *            - 1 set notch filter a0 coefficient failed
@@ -4330,9 +4330,9 @@ uint8_t wm8978_set_notch_filter_a0_coefficient_bit_6_0(wm8978_handle_t *handle, 
 
 /**
  * @brief     set notch filter a1 coefficient bit13 - bit7
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] update_once is a bool value
- * @param[in] coefficient is the set coefficient
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] update_once bool value
+ * @param[in] coefficient set coefficient
  * @return    status code
  *            - 0 success
  *            - 1 set notch filter a1 coefficient failed
@@ -4385,9 +4385,9 @@ uint8_t wm8978_set_notch_filter_a1_coefficient_bit_13_7(wm8978_handle_t *handle,
 
 /**
  * @brief     set notch filter a1 coefficient bit6 - bit0
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] update_once is a bool value
- * @param[in] coefficient is the set coefficient
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] update_once bool value
+ * @param[in] coefficient set coefficient
  * @return    status code
  *            - 0 success
  *            - 1 set notch filter a1 coefficient failed
@@ -4440,8 +4440,8 @@ uint8_t wm8978_set_notch_filter_a1_coefficient_bit_6_0(wm8978_handle_t *handle, 
 
 /**
  * @brief     set alc
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] alc is the set alc
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] alc set alc
  * @return    status code
  *            - 0 success
  *            - 1 set alc failed
@@ -4485,8 +4485,8 @@ uint8_t wm8978_set_alc(wm8978_handle_t *handle, wm8978_alc_t alc)
 
 /**
  * @brief     set alc max gain
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] gain is the alc max gain
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] gain alc max gain
  * @return    status code
  *            - 0 success
  *            - 1 set alc max gain failed
@@ -4530,8 +4530,8 @@ uint8_t wm8978_set_alc_max_gain(wm8978_handle_t *handle, wm8978_max_gain_t gain)
 
 /**
  * @brief     set alc min gain
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] gain is the alc min gain
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] gain alc min gain
  * @return    status code
  *            - 0 success
  *            - 1 set alc min gain failed
@@ -4575,8 +4575,8 @@ uint8_t wm8978_set_alc_min_gain(wm8978_handle_t *handle, wm8978_min_gain_t gain)
 
 /**
  * @brief     set alc hold time
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] t is the alc hold time
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] t alc hold time
  * @return    status code
  *            - 0 success
  *            - 1 set alc hold time failed
@@ -4627,9 +4627,9 @@ uint8_t wm8978_set_alc_hold_time(wm8978_handle_t *handle, uint8_t t)
 
 /**
  * @brief      convert the alc hold time to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  ms is the alc hold time in ms
- * @param[out] *reg points to an alc hold time raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  ms alc hold time in ms
+ * @param[out] *reg pointer to an alc hold time raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -4654,9 +4654,9 @@ uint8_t wm8978_alc_hold_time_convert_to_register(wm8978_handle_t *handle, float 
 
 /**
  * @brief      convert the alc hold time register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *ms points to an alc hold time real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *ms pointer to an alc hold time real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -4681,8 +4681,8 @@ uint8_t wm8978_alc_hold_time_convert_to_data(wm8978_handle_t *handle, uint8_t re
 
 /**
  * @brief     set alc level
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] level is the set level
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] level set level
  * @return    status code
  *            - 0 success
  *            - 1 set alc level failed
@@ -4726,8 +4726,8 @@ uint8_t wm8978_set_alc_level(wm8978_handle_t *handle, wm8978_alc_level_t level)
 
 /**
  * @brief     set alc mode
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] mode is the alc mode
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] mode alc mode
  * @return    status code
  *            - 0 success
  *            - 1 set alc mode failed
@@ -4771,8 +4771,8 @@ uint8_t wm8978_set_alc_mode(wm8978_handle_t *handle, wm8978_alc_mode_t mode)
 
 /**
  * @brief     set alc decay
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] decay is the set decay
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] decay set decay
  * @return    status code
  *            - 0 success
  *            - 1 set alc decay failed
@@ -4823,8 +4823,8 @@ uint8_t wm8978_set_alc_decay(wm8978_handle_t *handle, uint8_t decay)
 
 /**
  * @brief     set alc attack
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] attack is the set attack
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] attack set attack
  * @return    status code
  *            - 0 success
  *            - 1 set alc attack failed
@@ -4875,8 +4875,8 @@ uint8_t wm8978_set_alc_attack(wm8978_handle_t *handle, uint8_t attack)
 
 /**
  * @brief     enable or disable alc noise gate
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set alc noise gate failed
@@ -4920,8 +4920,8 @@ uint8_t wm8978_set_alc_noise_gate(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set alc noise gate threshold
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] threshold is the alc noise gate threshold
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] threshold alc noise gate threshold
  * @return    status code
  *            - 0 success
  *            - 1 set alc noise gate threshold failed
@@ -4972,9 +4972,9 @@ uint8_t wm8978_set_alc_noise_gate_threshold(wm8978_handle_t *handle, uint8_t thr
 
 /**
  * @brief      convert the alc noise gate threshold to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the alc noise gate threshold in db
- * @param[out] *reg points to an alc noise gate threshold raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db alc noise gate threshold in db
+ * @param[out] *reg pointer to an alc noise gate threshold raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -4999,9 +4999,9 @@ uint8_t wm8978_alc_noise_gate_threshold_convert_to_register(wm8978_handle_t *han
 
 /**
  * @brief      convert the alc noise gate threshold register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to an alc noise gate threshold real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to an alc noise gate threshold real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -5026,8 +5026,8 @@ uint8_t wm8978_alc_noise_gate_threshold_convert_to_data(wm8978_handle_t *handle,
 
 /**
  * @brief     enable or disable mclk divide by 2
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set mclk divide by 2 failed
@@ -5071,8 +5071,8 @@ uint8_t wm8978_set_mclk_divide_by_2(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief     set plln
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] n is the set pll
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] n set pll
  * @return    status code
  *            - 0 success
  *            - 1 set plln failed
@@ -5123,8 +5123,8 @@ uint8_t wm8978_set_plln(wm8978_handle_t *handle, uint8_t n)
 
 /**
  * @brief     set pll freq
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] freq is the pll freq
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] freq pll freq
  * @return    status code
  *            - 0 success
  *            - 1 set pll freq failed
@@ -5176,8 +5176,8 @@ uint8_t wm8978_set_pll_freq(wm8978_handle_t *handle, uint32_t freq)
 
 /**
  * @brief     set depth 3d
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] depth is the 3d depth
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] depth 3d depth
  * @return    status code
  *            - 0 success
  *            - 1 set depth 3d failed
@@ -5228,9 +5228,9 @@ uint8_t wm8978_set_depth_3d(wm8978_handle_t *handle, uint8_t depth)
 
 /**
  * @brief      convert the depth 3d to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  percent is the set percent
- * @param[out] *reg points to a depth 3d raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  percent set percent
+ * @param[out] *reg pointer to a depth 3d raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -5255,9 +5255,9 @@ uint8_t wm8978_depth_3d_convert_to_register(wm8978_handle_t *handle, float perce
 
 /**
  * @brief      convert the depth 3d register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *percent points to a depth 3d real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *percent pointer to a depth 3d real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -5282,8 +5282,8 @@ uint8_t wm8978_depth_3d_convert_to_data(wm8978_handle_t *handle, uint8_t reg, fl
 
 /**
  * @brief     enable or disable mute input to inv rout2 mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set mute input to inv rout2 mixer failed
@@ -5327,8 +5327,8 @@ uint8_t wm8978_set_mute_input_to_inv_rout2_mixer(wm8978_handle_t *handle, wm8978
 
 /**
  * @brief     enable or disable inv rout2 mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set inv rout2 mixer failed
@@ -5372,8 +5372,8 @@ uint8_t wm8978_set_inv_rout2_mixer(wm8978_handle_t *handle, wm8978_bool_t enable
 
 /**
  * @brief     set beep volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set volume
  * @return    status code
  *            - 0 success
  *            - 1 set beep volume failed
@@ -5424,9 +5424,9 @@ uint8_t wm8978_set_beep_volume(wm8978_handle_t *handle, uint8_t vol)
 
 /**
  * @brief      convert the beep volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a beep volume raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a beep volume raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -5451,9 +5451,9 @@ uint8_t wm8978_beep_volume_convert_to_register(wm8978_handle_t *handle, int8_t d
 
 /**
  * @brief      convert the beep volume register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -5478,8 +5478,8 @@ uint8_t wm8978_beep_volume_convert_to_data(wm8978_handle_t *handle, uint8_t reg,
 
 /**
  * @brief     enable or disable beep
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set beep failed
@@ -5523,8 +5523,8 @@ uint8_t wm8978_set_beep(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     set microphone bias voltage
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] avdd is the set avdd
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] avdd set avdd
  * @return    status code
  *            - 0 success
  *            - 1 set microphone bias voltage failed
@@ -5568,8 +5568,8 @@ uint8_t wm8978_set_microphone_bias_voltage(wm8978_handle_t *handle, wm8978_avdd_
 
 /**
  * @brief     enable or disable right channel input pga positive
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga positive failed
@@ -5613,8 +5613,8 @@ uint8_t wm8978_set_right_channel_input_pga_positive(wm8978_handle_t *handle, wm8
 
 /**
  * @brief     enable or disable right channel input pga negative
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga negative failed
@@ -5658,8 +5658,8 @@ uint8_t wm8978_set_right_channel_input_pga_negative(wm8978_handle_t *handle, wm8
 
 /**
  * @brief     enable or disable right channel input pga amplifier positive
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga amplifier positive failed
@@ -5703,8 +5703,8 @@ uint8_t wm8978_set_right_channel_input_pga_amplifier_positive(wm8978_handle_t *h
 
 /**
  * @brief     enable or disable left channel input pga positive
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga positive failed
@@ -5748,8 +5748,8 @@ uint8_t wm8978_set_left_channel_input_pga_positive(wm8978_handle_t *handle, wm89
 
 /**
  * @brief     enable or disable left channel input pga negative
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga negative failed
@@ -5793,8 +5793,8 @@ uint8_t wm8978_set_left_channel_input_pga_negative(wm8978_handle_t *handle, wm89
 
 /**
  * @brief     enable or disable left channel input pga amplifier positive
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga amplifier positive failed
@@ -5838,8 +5838,8 @@ uint8_t wm8978_set_left_channel_input_pga_amplifier_positive(wm8978_handle_t *ha
 
 /**
  * @brief     enable or disable left input pga update
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left input pga update failed
@@ -5883,8 +5883,8 @@ uint8_t wm8978_set_left_input_pga_update(wm8978_handle_t *handle, wm8978_bool_t 
 
 /**
  * @brief     enable or disable left channel input pga zero cross
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga zero cross failed
@@ -5928,8 +5928,8 @@ uint8_t wm8978_set_left_channel_input_pga_zero_cross(wm8978_handle_t *handle, wm
 
 /**
  * @brief     enable or disable left channel input pga mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga mute failed
@@ -5973,8 +5973,8 @@ uint8_t wm8978_set_left_channel_input_pga_mute(wm8978_handle_t *handle, wm8978_b
 
 /**
  * @brief     set left channel input pga volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] volume is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] volume set volume
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga volume failed
@@ -6025,9 +6025,9 @@ uint8_t wm8978_set_left_channel_input_pga_volume(wm8978_handle_t *handle, uint8_
 
 /**
  * @brief      convert the left channel input pga volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a volume raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a volume raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6052,9 +6052,9 @@ uint8_t wm8978_left_channel_input_pga_volume_convert_to_register(wm8978_handle_t
 
 /**
  * @brief      convert the left channel input pga volume register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a volume real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a volume real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6079,8 +6079,8 @@ uint8_t wm8978_left_channel_input_pga_volume_convert_to_data(wm8978_handle_t *ha
 
 /**
  * @brief     enable or disable right input pga update
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right input pga update failed
@@ -6124,8 +6124,8 @@ uint8_t wm8978_set_right_input_pga_update(wm8978_handle_t *handle, wm8978_bool_t
 
 /**
  * @brief     enable or disable right channel input pga zero cross
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga zero cross failed
@@ -6169,8 +6169,8 @@ uint8_t wm8978_set_right_channel_input_pga_zero_cross(wm8978_handle_t *handle, w
 
 /**
  * @brief     enable or disable right channel input pga mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga mute failed
@@ -6214,8 +6214,8 @@ uint8_t wm8978_set_right_channel_input_pga_mute(wm8978_handle_t *handle, wm8978_
 
 /**
  * @brief     set right channel input pga volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] volume is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] volume set volume
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga volume failed
@@ -6266,9 +6266,9 @@ uint8_t wm8978_set_right_channel_input_pga_volume(wm8978_handle_t *handle, uint8
 
 /**
  * @brief      convert the right channel input pga volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a volume raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a volume raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6293,9 +6293,9 @@ uint8_t wm8978_right_channel_input_pga_volume_convert_to_register(wm8978_handle_
 
 /**
  * @brief      convert the right channel input pga volume register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a volume real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a volume real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6320,8 +6320,8 @@ uint8_t wm8978_right_channel_input_pga_volume_convert_to_data(wm8978_handle_t *h
 
 /**
  * @brief     enable or disable left channel input pga boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input pga boost failed
@@ -6365,8 +6365,8 @@ uint8_t wm8978_set_left_channel_input_pga_boost(wm8978_handle_t *handle, wm8978_
 
 /**
  * @brief     set left channel input boost stage
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] stage is the set stage
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] stage set stage
  * @return    status code
  *            - 0 success
  *            - 1 set left channel input boost stage failed
@@ -6417,9 +6417,9 @@ uint8_t wm8978_set_left_channel_input_boost_stage(wm8978_handle_t *handle, uint8
 
 /**
  * @brief      convert the left channel input boost stage to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a volume raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a volume raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6444,9 +6444,9 @@ uint8_t wm8978_left_channel_input_boost_stage_convert_to_register(wm8978_handle_
 
 /**
  * @brief      convert the left channel input boost stage register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6471,8 +6471,8 @@ uint8_t wm8978_left_channel_input_boost_stage_convert_to_data(wm8978_handle_t *h
 
 /**
  * @brief     set auxiliary amplifier left channel input boost stage
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] stage is the set stage
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] stage set stage
  * @return    status code
  *            - 0 success
  *            - 1 set auxiliary amplifier left channel input boost stage failed
@@ -6523,9 +6523,9 @@ uint8_t wm8978_set_auxiliary_amplifier_left_channel_input_boost_stage(wm8978_han
 
 /**
  * @brief      convert the auxiliary amplifier left channel input boost stage to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a volume raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a volume raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6550,9 +6550,9 @@ uint8_t wm8978_auxiliary_amplifier_left_channel_input_boost_stage_convert_to_reg
 
 /**
  * @brief      convert the auxiliary amplifier left channel input boost stage register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6577,8 +6577,8 @@ uint8_t wm8978_auxiliary_amplifier_left_channel_input_boost_stage_convert_to_dat
 
 /**
  * @brief     enable or disable right channel input pga boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input pga boost failed
@@ -6622,8 +6622,8 @@ uint8_t wm8978_set_right_channel_input_pga_boost(wm8978_handle_t *handle, wm8978
 
 /**
  * @brief     set right channel input boost stage
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] stage is the set stage
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] stage set stage
  * @return    status code
  *            - 0 success
  *            - 1 set right channel input boost stage failed
@@ -6674,9 +6674,9 @@ uint8_t wm8978_set_right_channel_input_boost_stage(wm8978_handle_t *handle, uint
 
 /**
  * @brief      convert the right channel input boost stage to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a volume raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a volume raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6701,9 +6701,9 @@ uint8_t wm8978_right_channel_input_boost_stage_convert_to_register(wm8978_handle
 
 /**
  * @brief      convert the right channel input boost stage register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6728,8 +6728,8 @@ uint8_t wm8978_right_channel_input_boost_stage_convert_to_data(wm8978_handle_t *
 
 /**
  * @brief     set auxiliary amplifier right channel input boost stage
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] stage is the set stage
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] stage set stage
  * @return    status code
  *            - 0 success
  *            - 1 set auxiliary amplifier right channel input boost stage failed
@@ -6780,9 +6780,9 @@ uint8_t wm8978_set_auxiliary_amplifier_right_channel_input_boost_stage(wm8978_ha
 
 /**
  * @brief      convert the auxiliary amplifier right channel input boost stage to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6807,9 +6807,9 @@ uint8_t wm8978_auxiliary_amplifier_right_channel_input_boost_stage_convert_to_re
 
 /**
  * @brief      convert the auxiliary amplifier right channel input boost stage register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -6834,8 +6834,8 @@ uint8_t wm8978_auxiliary_amplifier_right_channel_input_boost_stage_convert_to_da
 
 /**
  * @brief     enable or disable left dac output to right output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left dac output to right output mixer failed
@@ -6879,8 +6879,8 @@ uint8_t wm8978_set_left_dac_output_to_right_output_mixer(wm8978_handle_t *handle
 
 /**
  * @brief     enable or disable right dac output to left output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right dac output to left output mixer failed
@@ -6924,8 +6924,8 @@ uint8_t wm8978_set_right_dac_output_to_left_output_mixer(wm8978_handle_t *handle
 
 /**
  * @brief     enable or disable out4 boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out4 boost failed
@@ -6969,8 +6969,8 @@ uint8_t wm8978_set_out4_boost(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable out3 boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out3 boost failed
@@ -7014,8 +7014,8 @@ uint8_t wm8978_set_out3_boost(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable speaker boost
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set speaker boost failed
@@ -7059,8 +7059,8 @@ uint8_t wm8978_set_speaker_boost(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable thermal shutdown
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set thermal shutdown failed
@@ -7104,8 +7104,8 @@ uint8_t wm8978_set_thermal_shutdown(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief     set vref to analogue output resistance
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vref is the set vref
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vref set vref
  * @return    status code
  *            - 0 success
  *            - 1 set vref to analogue output resistance failed
@@ -7149,8 +7149,8 @@ uint8_t wm8978_set_vref_to_analogue_output_resistance(wm8978_handle_t *handle, w
 
 /**
  * @brief     set aux left channel input to left mixer volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set vol
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set vol
  * @return    status code
  *            - 0 success
  *            - 1 set aux left channel input to left mixer volume failed
@@ -7201,9 +7201,9 @@ uint8_t wm8978_set_aux_left_channel_input_to_left_mixer_volume(wm8978_handle_t *
 
 /**
  * @brief      convert the aux left channel input to left mixer volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7228,9 +7228,9 @@ uint8_t wm8978_aux_left_channel_input_to_left_mixer_volume_convert_to_register(w
 
 /**
  * @brief      convert the aux left channel input to left mixer volume register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7255,8 +7255,8 @@ uint8_t wm8978_aux_left_channel_input_to_left_mixer_volume_convert_to_data(wm897
 
 /**
  * @brief     enable or disable left auxiliary input to left channel output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left auxiliary input to left channel output mixer failed
@@ -7300,8 +7300,8 @@ uint8_t wm8978_set_left_auxiliary_input_to_left_channel_output_mixer(wm8978_hand
 
 /**
  * @brief     set left bypass volume control to output channel mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set vol
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set vol
  * @return    status code
  *            - 0 success
  *            - 1 set left bypass volume control to output channel mixer failed
@@ -7352,9 +7352,9 @@ uint8_t wm8978_set_left_bypass_volume_control_to_output_channel_mixer(wm8978_han
 
 /**
  * @brief      convert the left bypass volume control to output channel mixer to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7379,9 +7379,9 @@ uint8_t wm8978_left_bypass_volume_control_to_output_channel_mixer_convert_to_reg
 
 /**
  * @brief      convert the left bypass volume control to output channel mixer register raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7406,8 +7406,8 @@ uint8_t wm8978_left_bypass_volume_control_to_output_channel_mixer_convert_to_dat
 
 /**
  * @brief     enable or disable left bypass path to left output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left bypass path to left output mixer failed
@@ -7451,8 +7451,8 @@ uint8_t wm8978_set_left_bypass_path_to_left_output_mixer(wm8978_handle_t *handle
 
 /**
  * @brief     enable or disable left dac output to left output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left dac output to left output mixer failed
@@ -7496,8 +7496,8 @@ uint8_t wm8978_set_left_dac_output_to_left_output_mixer(wm8978_handle_t *handle,
 
 /**
  * @brief     set aux right channel input to right mixer volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set vol
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set vol
  * @return    status code
  *            - 0 success
  *            - 1 set aux right channel input to right mixer volume failed
@@ -7548,9 +7548,9 @@ uint8_t wm8978_set_aux_right_channel_input_to_right_mixer_volume(wm8978_handle_t
 
 /**
  * @brief      convert the aux right channel input to right mixer volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7575,9 +7575,9 @@ uint8_t wm8978_aux_right_channel_input_to_right_mixer_volume_convert_to_register
 
 /**
  * @brief      convert the aux right channel input to right mixer volume raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7602,8 +7602,8 @@ uint8_t wm8978_aux_right_channel_input_to_right_mixer_volume_convert_to_data(wm8
 
 /**
  * @brief     enable or disable right auxiliary input to right channel output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right auxiliary input to right channel output mixer failed
@@ -7647,8 +7647,8 @@ uint8_t wm8978_set_right_auxiliary_input_to_right_channel_output_mixer(wm8978_ha
 
 /**
  * @brief     set right bypass volume control to output channel mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set vol
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set vol
  * @return    status code
  *            - 0 success
  *            - 1 set right bypass volume control to output channel mixer failed
@@ -7699,9 +7699,9 @@ uint8_t wm8978_set_right_bypass_volume_control_to_output_channel_mixer(wm8978_ha
 
 /**
  * @brief      convert the right bypass volume control to output channel mixer to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7726,9 +7726,9 @@ uint8_t wm8978_right_bypass_volume_control_to_output_channel_mixer_convert_to_re
 
 /**
  * @brief      convert the right bypass volume control to output channel mixer raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7753,8 +7753,8 @@ uint8_t wm8978_right_bypass_volume_control_to_output_channel_mixer_convert_to_da
 
 /**
  * @brief     enable or disable right bypass path to right output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right bypass path to right output mixer failed
@@ -7798,8 +7798,8 @@ uint8_t wm8978_set_right_bypass_path_to_right_output_mixer(wm8978_handle_t *hand
 
 /**
  * @brief     enable or disable right dac output to right output mixer
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right dac output to right output mixer failed
@@ -7843,8 +7843,8 @@ uint8_t wm8978_set_right_dac_output_to_right_output_mixer(wm8978_handle_t *handl
 
 /**
  * @brief     enable or disable lout1 update
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lout1 update failed
@@ -7888,8 +7888,8 @@ uint8_t wm8978_set_lout1_update(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable lout1 headphone volume zero cross
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lout1 headphone volume zero cross failed
@@ -7933,8 +7933,8 @@ uint8_t wm8978_set_lout1_headphone_volume_zero_cross(wm8978_handle_t *handle, wm
 
 /**
  * @brief     enable or disable lout1 left headphone output mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lout1 left headphone output mute failed
@@ -7978,8 +7978,8 @@ uint8_t wm8978_set_lout1_left_headphone_output_mute(wm8978_handle_t *handle, wm8
 
 /**
  * @brief     set lout1 left headphone output volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set volume
  * @return    status code
  *            - 0 success
  *            - 1 set lout1 left headphone output volume failed
@@ -8030,9 +8030,9 @@ uint8_t wm8978_set_lout1_left_headphone_output_volume(wm8978_handle_t *handle, u
 
 /**
  * @brief      convert the lout1 left headphone output volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8057,9 +8057,9 @@ uint8_t wm8978_lout1_left_headphone_output_volume_convert_to_register(wm8978_han
 
 /**
  * @brief      convert the lout1 left headphone output volume raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8084,8 +8084,8 @@ uint8_t wm8978_lout1_left_headphone_output_volume_convert_to_data(wm8978_handle_
 
 /**
  * @brief     enable or disable rout1 update
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set rout1 update failed
@@ -8129,8 +8129,8 @@ uint8_t wm8978_set_rout1_update(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable rout1 headphone volume zero cross
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set rout1 headphone volume zero cross failed
@@ -8174,8 +8174,8 @@ uint8_t wm8978_set_rout1_headphone_volume_zero_cross(wm8978_handle_t *handle, wm
 
 /**
  * @brief     enable or disable rout1 right headphone output mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set rout1 right headphone output mute failed
@@ -8219,8 +8219,8 @@ uint8_t wm8978_set_rout1_right_headphone_output_mute(wm8978_handle_t *handle, wm
 
 /**
  * @brief     set rout1 right headphone output volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set volume
  * @return    status code
  *            - 0 success
  *            - 1 set rout1 right headphone output volume failed
@@ -8271,9 +8271,9 @@ uint8_t wm8978_set_rout1_right_headphone_output_volume(wm8978_handle_t *handle, 
 
 /**
  * @brief      convert the rout1 right headphone output volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8298,9 +8298,9 @@ uint8_t wm8978_rout1_right_headphone_output_volume_convert_to_register(wm8978_ha
 
 /**
  * @brief      convert the rout1 right headphone output volume raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8325,8 +8325,8 @@ uint8_t wm8978_rout1_right_headphone_output_volume_convert_to_data(wm8978_handle
 
 /**
  * @brief     enable or disable lout2 update
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lout2 update failed
@@ -8370,8 +8370,8 @@ uint8_t wm8978_set_lout2_update(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable lout2 speaker volume zero cross
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lout2 speaker volume zero cross failed
@@ -8415,8 +8415,8 @@ uint8_t wm8978_set_lout2_speaker_volume_zero_cross(wm8978_handle_t *handle, wm89
 
 /**
  * @brief     enable or disable lout2 left speaker output mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lout2 left speaker output mute failed
@@ -8460,8 +8460,8 @@ uint8_t wm8978_set_lout2_left_speaker_output_mute(wm8978_handle_t *handle, wm897
 
 /**
  * @brief     set lout2 left speaker output volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set volume
  * @return    status code
  *            - 0 success
  *            - 1 set lout2 left speaker output volume failed
@@ -8512,9 +8512,9 @@ uint8_t wm8978_set_lout2_left_speaker_output_volume(wm8978_handle_t *handle, uin
 
 /**
  * @brief      convert the lout2 left speaker output volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8539,9 +8539,9 @@ uint8_t wm8978_lout2_left_speaker_output_volume_convert_to_register(wm8978_handl
 
 /**
  * @brief      convert the lout2 left speaker output volume raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8566,8 +8566,8 @@ uint8_t wm8978_lout2_left_speaker_output_volume_convert_to_data(wm8978_handle_t 
 
 /**
  * @brief     enable or disable rout2 update
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set rout2 update failed
@@ -8611,8 +8611,8 @@ uint8_t wm8978_set_rout2_update(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable rout2 speaker volume zero cross
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set rout2 speaker volume zero cross failed
@@ -8656,8 +8656,8 @@ uint8_t wm8978_set_rout2_speaker_volume_zero_cross(wm8978_handle_t *handle, wm89
 
 /**
  * @brief     enable or disable rout2 right speaker output mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set rout2 right speaker output mute failed
@@ -8701,8 +8701,8 @@ uint8_t wm8978_set_rout2_right_speaker_output_mute(wm8978_handle_t *handle, wm89
 
 /**
  * @brief     set rout2 right speaker output volume
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] vol is the set volume
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] vol set volume
  * @return    status code
  *            - 0 success
  *            - 1 set rout2 right speaker output volume failed
@@ -8753,9 +8753,9 @@ uint8_t wm8978_set_rout2_right_speaker_output_volume(wm8978_handle_t *handle, ui
 
 /**
  * @brief      convert the rout2 right speaker output volume to the register raw data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a db raw data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a db raw data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8780,9 +8780,9 @@ uint8_t wm8978_rout2_right_speaker_output_volume_convert_to_register(wm8978_hand
 
 /**
  * @brief      convert the rout2 right speaker output volume raw data to the real data
- * @param[in]  *handle points to a wm8978 handle structure
- * @param[in]  reg is the raw data
- * @param[out] *db points to a db real data buffer
+ * @param[in]  *handle pointer to a wm8978 handle structure
+ * @param[in]  reg raw data
+ * @param[out] *db pointer to a db real data buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -8807,8 +8807,8 @@ uint8_t wm8978_rout2_right_speaker_output_volume_convert_to_data(wm8978_handle_t
 
 /**
  * @brief     enable or disable out3 mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out3 mute failed
@@ -8852,8 +8852,8 @@ uint8_t wm8978_set_out3_mute(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable out4 mixer output to out3
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out4 mixer output to out3 failed
@@ -8897,8 +8897,8 @@ uint8_t wm8978_set_out4_mixer_output_to_out3(wm8978_handle_t *handle, wm8978_boo
 
 /**
  * @brief     enable or disable left adc input to out3
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left adc input to out3 failed
@@ -8942,8 +8942,8 @@ uint8_t wm8978_set_left_adc_input_to_out3(wm8978_handle_t *handle, wm8978_bool_t
 
 /**
  * @brief     enable or disable left dac mixer to out3
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left dac mixer to out3 failed
@@ -8987,8 +8987,8 @@ uint8_t wm8978_set_left_dac_mixer_to_out3(wm8978_handle_t *handle, wm8978_bool_t
 
 /**
  * @brief     enable or disable left dac output to out3
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left dac output to out3 failed
@@ -9032,8 +9032,8 @@ uint8_t wm8978_set_left_dac_output_to_out3(wm8978_handle_t *handle, wm8978_bool_
 
 /**
  * @brief     enable or disable out4 mute
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out4 mute failed
@@ -9077,8 +9077,8 @@ uint8_t wm8978_set_out4_mute(wm8978_handle_t *handle, wm8978_bool_t enable)
 
 /**
  * @brief     enable or disable out4 attenuated by 6db
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set out4 attenuated by 6db failed
@@ -9122,8 +9122,8 @@ uint8_t wm8978_set_out4_attenuated_by_6db(wm8978_handle_t *handle, wm8978_bool_t
 
 /**
  * @brief     enable or disable left dac mixer to out4
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left dac mixer to out4 failed
@@ -9167,8 +9167,8 @@ uint8_t wm8978_set_left_dac_mixer_to_out4(wm8978_handle_t *handle, wm8978_bool_t
 
 /**
  * @brief     enable or disable left dac to out4
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set left dac to out4 failed
@@ -9212,8 +9212,8 @@ uint8_t wm8978_set_left_dac_to_out4(wm8978_handle_t *handle, wm8978_bool_t enabl
 
 /**
  * @brief     enable or disable right adc input to out4
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right adc input to out4 failed
@@ -9257,8 +9257,8 @@ uint8_t wm8978_set_right_adc_input_to_out4(wm8978_handle_t *handle, wm8978_bool_
 
 /**
  * @brief     enable or disable right dac mixer to out4
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right dac mixer to out4 failed
@@ -9302,8 +9302,8 @@ uint8_t wm8978_set_right_dac_mixer_to_out4(wm8978_handle_t *handle, wm8978_bool_
 
 /**
  * @brief     enable or disable right dac output to out4
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set right dac output to out4 failed
@@ -9347,7 +9347,7 @@ uint8_t wm8978_set_right_dac_output_to_out4(wm8978_handle_t *handle, wm8978_bool
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a wm8978 handle structure
+ * @param[in] *handle pointer to a wm8978 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic initialization failed
@@ -9422,7 +9422,7 @@ uint8_t wm8978_init(wm8978_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a wm8978 handle structure
+ * @param[in] *handle pointer to a wm8978 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -9475,9 +9475,9 @@ uint8_t wm8978_deinit(wm8978_handle_t *handle)
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to a wm8978 handle structure
- * @param[in] reg is the iic register address
- * @param[in] value is the data write to the register
+ * @param[in] *handle pointer to a wm8978 handle structure
+ * @param[in] reg iic register address
+ * @param[in] value data written to the register
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -9501,7 +9501,7 @@ uint8_t wm8978_set_reg(wm8978_handle_t *handle, uint8_t reg, uint16_t value)
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a wm8978 info structure
+ * @param[out] *info pointer to a wm8978 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
