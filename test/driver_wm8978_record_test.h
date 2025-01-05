@@ -51,7 +51,7 @@ extern "C"{
 
 /**
  * @brief     record file fill
- * @param[in] index is the buffer index
+ * @param[in] index buffer index
  * @return    status code
  *            - 0 success
  *            - 1 fill failed
@@ -61,8 +61,8 @@ uint8_t wm8978_record_file_fill(uint8_t index);
 
 /**
  * @brief     record test
- * @param[in] *path points to a path buffer
- * @param[in] second is the record second
+ * @param[in] *path pointer to a path buffer
+ * @param[in] second record second
  * @return    status code
  *            - 0 success
  *            - 1 test failed
@@ -72,7 +72,7 @@ uint8_t wm8978_record_test(char *path, uint32_t second);
 
 /**
  * @brief  record get handle
- * @return points to a wav handle
+ * @return pointer to a wav handle
  * @note   none
  */
 wav_handle_t *wm8978_record_get_handle(void);

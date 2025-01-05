@@ -48,9 +48,9 @@ FIL g_file;        /**< fs handle */
 
 /**
  * @brief     interface audio init
- * @param[in] type is the open type, 0 is read and 1 is write.
- * @param[in] *name points to a name buffer
- * @param[in] *size points to a file size buffer
+ * @param[in] type open type, 0 is read and 1 is write.
+ * @param[in] *name pointer to a name buffer
+ * @param[in] *size pointer to a file size buffer
  * @return    status code
  *            - 0 success
  *            - 1 audio init failed
@@ -113,9 +113,9 @@ uint8_t wav_audio_deinit(void)
 
 /**
  * @brief      interface audio read
- * @param[in]  addr is the mp3 file address
- * @param[in]  size is the read size
- * @param[out] *buffer points to a data buffer
+ * @param[in]  addr mp3 file address
+ * @param[in]  size read size
+ * @param[out] *buffer pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 audio read failed
@@ -142,9 +142,9 @@ uint8_t wav_audio_read(uint32_t addr, uint16_t size, uint8_t *buffer)
 
 /**
  * @brief     interface audio write
- * @param[in] addr is the mp3 file address
- * @param[in] size is the write size
- * @param[in] *buffer points to a data buffer
+ * @param[in] addr mp3 file address
+ * @param[in] size write size
+ * @param[in] *buffer pointer to a data buffer
  * @return    status code
  *            - 0 success
  *            - 1 audio write failed
@@ -171,12 +171,12 @@ uint8_t wav_audio_write(uint32_t addr, uint16_t size, uint8_t *buffer)
 
 /**
  * @brief     interface iis bus init
- * @param[in] standard is the iis standard
- * @param[in] mode is the iis mode
- * @param[in] polarity is the iis polarity
- * @param[in] format is the iis format
- * @param[in] enable is the mclk output
- * @param[in] freq is the set freq
+ * @param[in] standard iis standard
+ * @param[in] mode iis mode
+ * @param[in] polarity iis polarity
+ * @param[in] format iis format
+ * @param[in] enable mclk output
+ * @param[in] freq set freq
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -242,7 +242,7 @@ uint8_t wav_iis_resume(void)
 
 /**
  * @brief     interface freq
- * @param[in] freq is the set freq
+ * @param[in] freq set freq
  * @return    status code
  *            - 0 success
  *            - 1 set failed
@@ -256,8 +256,8 @@ uint8_t wav_iis_set_freq(uint32_t freq)
 
 /**
  * @brief     interface iis bus write
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of the data buffer
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of the data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -270,8 +270,8 @@ uint8_t wav_iis_write(uint16_t *buf, uint16_t len)
 
 /**
  * @brief      interface iis bus read
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the length of the data buffer
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -284,7 +284,7 @@ uint8_t wav_iis_read(uint16_t *buf, uint16_t len)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void wav_delay_ms(uint32_t ms)
@@ -294,7 +294,7 @@ void wav_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void wav_debug_print(const char *const fmt, ...)

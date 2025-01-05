@@ -52,7 +52,7 @@ uint16_t volatile g_len;                   /**< uart buffer length */
 
 /**
  * @brief     iis tx half complete callback
- * @param[in] *hi2s points to an iis handle
+ * @param[in] *hi2s pointer to an iis handle
  * @note      none
  */
 void HAL_I2S_TxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
@@ -62,7 +62,7 @@ void HAL_I2S_TxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
 
 /**
  * @brief     iis tx complete callback
- * @param[in] *hi2s points to an iis handle
+ * @param[in] *hi2s pointer to an iis handle
  * @note      none
  */
 void HAL_I2S_TxCpltCallback(I2S_HandleTypeDef *hi2s)
@@ -72,7 +72,7 @@ void HAL_I2S_TxCpltCallback(I2S_HandleTypeDef *hi2s)
 
 /**
  * @brief     iis ex tx half complete callback
- * @param[in] *hi2s points to an iis handle
+ * @param[in] *hi2s pointer to an iis handle
  * @note      none
  */
 void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
@@ -82,7 +82,7 @@ void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
 
 /**
  * @brief     iis ex tx complete callback
- * @param[in] *hi2s points to an iis handle
+ * @param[in] *hi2s pointer to an iis handle
  * @note      none
  */
 void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s)
@@ -92,8 +92,8 @@ void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s)
 
 /**
  * @brief     wm8978 full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed

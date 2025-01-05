@@ -38,7 +38,7 @@
 
 /**
  * @brief     write wav header
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -107,7 +107,7 @@ static uint8_t a_wav_write_wav_header(wav_handle_t *handle)
 
 /**
  * @brief     initialize the wav
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -210,7 +210,7 @@ uint8_t wav_init(wav_handle_t *handle)
 
 /**
  * @brief     wav deinit
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -236,8 +236,8 @@ uint8_t wav_deinit(wav_handle_t *handle)
 
 /**
  * @brief     initialize the wav player
- * @param[in] *handle points to a wav handle structure
- * @param[in] *path points to a path buffer
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 play failed
@@ -374,13 +374,13 @@ uint8_t wav_player_init(wav_handle_t *handle, char *path)
 
 /**
  * @brief     wav player config
- * @param[in] *handle points to a wav handle structure
- * @param[in] standard is the iis standard
- * @param[in] mode is the iis mode
- * @param[in] polarity is the iis polarity
- * @param[in] format is the iis format
- * @param[in] enable is the mclk output
- * @param[in] freq is the set freq
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] standard iis standard
+ * @param[in] mode iis mode
+ * @param[in] polarity iis polarity
+ * @param[in] format iis format
+ * @param[in] enable mclk output
+ * @param[in] freq set freq
  * @return    status code
  *            - 0 success
  *            - 1 config failed
@@ -419,7 +419,7 @@ uint8_t wav_player_config(wav_handle_t *handle, uint32_t standard,
 
 /**
  * @brief     wav player start
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 start failed
@@ -465,9 +465,9 @@ uint8_t wav_player_start(wav_handle_t *handle)
 
 /**
  * @brief     wav record start
- * @param[in] *handle points to a wav handle structure
- * @param[in] sample_rate is the sample rate
- * @param[in] *path points to a path buffer
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] sample_rate sample rate
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 start failed
@@ -545,8 +545,8 @@ uint8_t wav_record_start(wav_handle_t *handle, uint32_t sample_rate, char *path)
 
 /**
  * @brief     wav record file fill
- * @param[in] *handle points to a wav handle structure
- * @param[in] index is the fill index
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] index fill index
  * @return    status code
  *            - 0 success
  *            - 1 fill failed
@@ -599,7 +599,7 @@ uint8_t wav_record_file_fill(wav_handle_t *handle, uint8_t index)
 
 /**
  * @brief     wav record stop
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop failed
@@ -658,7 +658,7 @@ uint8_t wav_record_stop(wav_handle_t *handle)
 
 /**
  * @brief     wav player stop
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop failed
@@ -709,7 +709,7 @@ uint8_t wav_player_stop(wav_handle_t *handle)
 
 /**
  * @brief     wav player pause
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 pause failed
@@ -747,7 +747,7 @@ uint8_t wav_player_pause(wav_handle_t *handle)
 
 /**
  * @brief     wav player resume
- * @param[in] *handle points to a wav handle structure
+ * @param[in] *handle pointer to a wav handle structure
  * @return    status code
  *            - 0 success
  *            - 1 resume failed
@@ -785,8 +785,8 @@ uint8_t wav_player_resume(wav_handle_t *handle)
 
 /**
  * @brief      wav get status
- * @param[in]  *handle points to a wav handle structure
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to a wav handle structure
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get status failed
@@ -812,8 +812,8 @@ uint8_t wav_player_get_status(wav_handle_t *handle, wav_status_t *status)
 
 /**
  * @brief     wav player buffer fill
- * @param[in] *handle points to a wav handle structure
- * @param[in] index is the fill index
+ * @param[in] *handle pointer to a wav handle structure
+ * @param[in] index fill index
  * @return    status code
  *            - 0 success
  *            - 1 fill failed

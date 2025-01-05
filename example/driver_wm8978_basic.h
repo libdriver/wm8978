@@ -198,7 +198,7 @@ typedef enum
 
 /**
  * @brief     basic example init
- * @param[in] mode is the basic mode
+ * @param[in] mode basic mode
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -217,9 +217,9 @@ uint8_t wm8978_basic_deinit(void);
 
 /**
  * @brief     basic example config
- * @param[in] companding is the set companding
- * @param[in] channel is the set channel
- * @param[in] length is the word length
+ * @param[in] companding set companding
+ * @param[in] channel set channel
+ * @param[in] length word length
  * @return    status code
  *            - 0 success
  *            - 1 config failed
@@ -229,7 +229,7 @@ uint8_t wm8978_basic_config(wm8978_companding_t companding, wm8978_channel_t cha
 
 /**
  * @brief     basic example set dac volume
- * @param[in] db is the set db
+ * @param[in] db set db
  * @return    status code
  *            - 0 success
  *            - 1 set dac volume failed
@@ -248,7 +248,7 @@ uint8_t wm8978_basic_set_dac_mute(void);
 
 /**
  * @brief     basic example set adc volume
- * @param[in] db is the set db
+ * @param[in] db set db
  * @return    status code
  *            - 0 success
  *            - 1 set adc volume failed
