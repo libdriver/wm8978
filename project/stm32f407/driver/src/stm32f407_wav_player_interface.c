@@ -47,14 +47,14 @@ FATFS g_fs;        /**< fatfs handle */
 FIL g_file;        /**< fs handle */
 
 /**
- * @brief     interface audio init
- * @param[in] type open type, 0 is read and 1 is write.
- * @param[in] *name pointer to a name buffer
- * @param[in] *size pointer to a file size buffer
- * @return    status code
- *            - 0 success
- *            - 1 audio init failed
- * @note      none
+ * @brief      interface audio init
+ * @param[in]  type open type, 0 is read and 1 is write.
+ * @param[in]  *name pointer to a name buffer
+ * @param[out] *size pointer to a file size buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 audio init failed
+ * @note       none
  */
 uint8_t wav_audio_init(uint8_t type, char *name, uint32_t *size)
 {
