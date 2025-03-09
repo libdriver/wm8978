@@ -51,12 +51,12 @@
 
 /**
  * @brief     iis bus init
- * @param[in] standard is the iis standard
- * @param[in] mode is the iis mode
- * @param[in] polarity is the iis polarity
- * @param[in] format is the iis format
- * @param[in] enable is the mclk output
- * @param[in] freq is the set freq
+ * @param[in] standard iis standard
+ * @param[in] mode iis mode
+ * @param[in] polarity iis polarity
+ * @param[in] format iis format
+ * @param[in] enable mclk output
+ * @param[in] freq set freq
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -107,7 +107,7 @@ uint8_t iis_resume(void);
 
 /**
  * @brief     set freq
- * @param[in] freq is the set freq
+ * @param[in] freq set freq
  * @return    status code
  *            - 0 success
  *            - 1 set failed
@@ -118,8 +118,8 @@ uint8_t iis_set_freq(uint32_t freq);
 
 /**
  * @brief     iis bus write
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of the data buffer
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of the data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -129,8 +129,8 @@ uint8_t iis_write(uint16_t *buf, uint16_t len);
 
 /**
  * @brief      iis bus read
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the length of the data buffer
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -140,21 +140,21 @@ uint8_t iis_read(uint16_t *buf, uint16_t len);
 
 /**
  * @brief  iis get handle
- * @return points to an iis handle
+ * @return pointer to an iis handle
  * @note   none
  */
 I2S_HandleTypeDef* iis_get_handle(void);
 
 /**
  * @brief  iis get the tx dma handle
- * @return points to a tx dma handle
+ * @return pointer to a tx dma handle
  * @note   none
  */
 DMA_HandleTypeDef* iis_get_tx_dma_handle(void);
 
 /**
  * @brief  iis get the rx dma handle
- * @return points to a rx dma handle
+ * @return pointer to a rx dma handle
  * @note   none
  */
 DMA_HandleTypeDef* iis_get_rx_dma_handle(void);

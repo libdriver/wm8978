@@ -168,7 +168,7 @@ void USART2_IRQHandler(void)
 
 /**
  * @brief     uart error callback
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
@@ -178,7 +178,7 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 
 /**
  * @brief     uart rx receive callback
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -197,7 +197,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 /**
  * @brief     uart tx finished callback
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
@@ -243,7 +243,7 @@ void SDMMC1_IRQHandler(void)
 
 /**
  * @brief     sd tx complete callback
- * @param[in] *hsd points to a sd handle
+ * @param[in] *hsd pointer to a sd handle
  * @note      none
  */
 void HAL_SD_TxCpltCallback(SD_HandleTypeDef *hsd)
@@ -254,7 +254,7 @@ void HAL_SD_TxCpltCallback(SD_HandleTypeDef *hsd)
 
 /**
  * @brief     sd rx complete callback
- * @param[in] *hsd points to a sd handle
+ * @param[in] *hsd pointer to a sd handle
  * @note      none
  */
 void HAL_SD_RxCpltCallback(SD_HandleTypeDef *hsd)

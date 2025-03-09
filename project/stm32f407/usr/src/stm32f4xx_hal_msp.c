@@ -63,7 +63,7 @@ void HAL_MspDeInit(void)
 
 /**
  * @brief     uart hal init
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_MspInit(UART_HandleTypeDef *huart)
@@ -120,7 +120,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
 /**
  * @brief     uart hal deinit
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
@@ -151,7 +151,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
 
 /**
  * @brief     i2s hal init
- * @param[in] *hi2s points to an i2s handle
+ * @param[in] *hi2s pointer to an i2s handle
  * @note      none
  */
 void HAL_I2S_MspInit(I2S_HandleTypeDef *hi2s)
@@ -258,7 +258,7 @@ void HAL_I2S_MspInit(I2S_HandleTypeDef *hi2s)
 
 /**
  * @brief     i2s hal deinit
- * @param[in] *hi2s points to an i2s handle
+ * @param[in] *hi2s pointer to an i2s handle
  * @note      none
  */
 void HAL_I2S_MspDeInit(I2S_HandleTypeDef *hi2s)
@@ -299,7 +299,7 @@ void HAL_I2S_MspDeInit(I2S_HandleTypeDef *hi2s)
 
 /**
  * @brief     sd hal init
- * @param[in] *hsd points to a sd handle
+ * @param[in] *hsd pointer to a sd handle
  * @note      none
  */
 void HAL_SD_MspInit(SD_HandleTypeDef *hsd)
@@ -397,7 +397,7 @@ void HAL_SD_MspInit(SD_HandleTypeDef *hsd)
 
 /**
  * @brief     sd hal deinit
- * @param[in] *hsd points to a sd handle
+ * @param[in] *hsd pointer to a sd handle
  * @note      none
  */
 void HAL_SD_MspDeInit(SD_HandleTypeDef *hsd)
