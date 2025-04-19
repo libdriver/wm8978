@@ -10,7 +10,7 @@
 
 The WM8978 is a low power, high quality stereo CODEC designed for portable applications such as multimedia phone, digital still camera or digital camcorder.The device integrates preamps for stereo differential mics, and includes drivers for speakers, headphone and differential or stereo line output. External component requirements are reduced as no separate microphone or headphone amplifiers are required.Advanced on-chip digital signal processing includes a 5-band equaliser, a mixed signal Automatic Level Control for the microphone or line input through the ADC as well as a purely digital limiter function for record or playback. Additional digital filtering options are available in the ADC path, to cater for application filtering such as ‘wind noise reduction’.The WM8978 digital audio interface can operate as a master or a slave. An internal PLL can generate all required audio clocks for the CODEC from common reference clock frequencies, such as 12MHz and 13MHz.The WM8978 operates at analogue supply voltages from 2.5V to 3.3V, although the digital core can operate at voltages down to 1.71V to save power. The speaker outputs and OUT3/4 line outputs can run from a 5V supply if increased output power is required. Individual sections of the chip can also be powered down under software control.
 
-LibDriver WM8978 is the full function driver of WM8978 launched by LibDriver.It provides audio playing, audio recording and other functions. LibDriver is MISRA compliant.
+LibDriver WM8978 is a full-featured driver of WM8978 launched by LibDriver.It provides audio playing, audio recording and other functions. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
