@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pos_55',['pos',['../structwav__handle__s.html#af09611129dedc89382e4d7b6427bdb27',1,'wav_handle_s']]]
+  ['num_5fchannel_0',['num_channel',['../structwav__header__s.html#a93258979d955b77395d65fc64821a4eb',1,'wav_header_s']]]
 ];
