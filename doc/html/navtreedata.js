@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "LibDriver WM8978", "index.html", [
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -51,13 +51,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__wm8978__base__driver.html#ga186e5b73013d5d1e7988361f304336fb",
-"group__wm8978__base__driver.html#ga66cf24cf8d15fedfd44eb0a9d469e8fc",
-"group__wm8978__base__driver.html#gabdbf6dc8934a644da135313389ccb3cc",
-"group__wm8978__base__driver.html#gga35989b4e0efc16ebbe29243c39a8b9eead3eaf5cad59a61d51a1def7aa6cb1dec",
-"group__wm8978__base__driver.html#ggaf62eebd539a75c970e976a9f2e8538b6ab87e6dd022d7c78160f4be6d33329a9b",
-"group__wm8978__example__driver.html#gadf38a6d274c73c5a0a41f0cf63d3a822"
+"group__wm8978__base__driver.html#ga6218e71ab47b6dcb4e54e8a9f40fe74d",
+"group__wm8978__base__driver.html#ggaab91ba57536a1b0de15bbed6785d0ff0a8e95127ba880db9bff52e08ab122a50d",
+"structwav__handle__s.html#a89a7acac4b2ae8470e8f858d3350845b"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
