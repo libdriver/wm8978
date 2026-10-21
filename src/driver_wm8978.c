@@ -35,6 +35,7 @@
  */
 
 #include "driver_wm8978.h"
+#include <math.h>
 
 /**
  * @brief chip information definition
@@ -119,7 +120,7 @@ static const uint16_t gsc_wm8978_init_reg[58] =
     0X00FF, 0X0000, 0X012C, 0X002C, 0X002C, 0X002C, 0X002C, 0X0000,
     0X0032, 0X0000, 0X0000, 0X0000, 0X0000, 0X0000, 0X0000, 0X0000,
     0X0038, 0X000B, 0X0032, 0X0000, 0X0008, 0X000C, 0X0093, 0X00E9,
-    0X0000, 0X0000, 0X0000, 0X0000, 0X0003, 0X0010, 0X0010, 0X0100,
+    0X0000, 0X0000, 0X0000, 0X0000, 0X0033, 0X0010, 0X0010, 0X0100,
     0X0100, 0X0002, 0X0001, 0X0001, 0X0039, 0X0039, 0X0039, 0X0039,
     0X0001, 0X0001
 }; 
@@ -163,7 +164,12 @@ static uint8_t a_wm8978_iic_read(wm8978_handle_t *handle, uint8_t reg, uint16_t 
 static uint8_t a_wm8978_iic_write(wm8978_handle_t *handle, uint8_t reg, uint16_t config)
 {
     uint8_t buf[1];
-  
+    
+    if (reg > 57)                                                                        /* check range 57 */
+    {
+        return 1;                                                                        /* return error */
+    }
+    
     buf[0] = config & 0xFF;                                                              /* set LSB */
     if (handle->iic_write(WM8978_ADDRESS, 
                          (reg << 1) | ((config >> 8) & 0x01), (uint8_t *)buf, 1) != 0)   /* write data */
@@ -188,6 +194,7 @@ static uint8_t a_wm8978_iic_write(wm8978_handle_t *handle, uint8_t reg, uint16_t
 uint8_t wm8978_soft_reset(wm8978_handle_t *handle)
 {
     uint8_t res;
+    uint8_t i;
     uint16_t conf;
     
     if (handle == NULL)                                                      /* check handle */
@@ -208,6 +215,10 @@ uint8_t wm8978_soft_reset(wm8978_handle_t *handle)
         return 1;                                                            /* return error */
     }
     handle->delay_ms(100);                                                   /* delay 100ms */
+    for (i = 0; i < 58; i++)                                                 /* set all */
+    {
+        handle->reg[i] = gsc_wm8978_init_reg[i];                             /* save regs */
+    }
     
     return 0;                                                                /* success return 0 */
 }
@@ -4638,18 +4649,18 @@ uint8_t wm8978_set_alc_hold_time(wm8978_handle_t *handle, uint8_t t)
  */
 uint8_t wm8978_alc_hold_time_convert_to_register(wm8978_handle_t *handle, float ms, uint8_t *reg)
 {
-    if (handle == NULL)                /* check handle */
+    if (handle == NULL)                           /* check handle */
     {
-        return 2;                      /* return error */
+        return 2;                                 /* return error */
     }
-    if (handle->inited != 1)           /* check handle initialization */
+    if (handle->inited != 1)                      /* check handle initialization */
     {
-        return 3;                      /* return error */
+        return 3;                                 /* return error */
     }
     
-    *reg = (uint8_t)(ms / 2.67f);      /* convert */
+    *reg = (uint8_t)(log2f(ms/2.67f)) + 1;        /* convert */
     
-    return 0;                          /* success return 0 */
+    return 0;                                     /* success return 0 */
 }
 
 /**
@@ -4665,18 +4676,25 @@ uint8_t wm8978_alc_hold_time_convert_to_register(wm8978_handle_t *handle, float 
  */
 uint8_t wm8978_alc_hold_time_convert_to_data(wm8978_handle_t *handle, uint8_t reg, float *ms)
 {
-    if (handle == NULL)             /* check handle */
+    if (handle == NULL)                                          /* check handle */
     {
-        return 2;                   /* return error */
+        return 2;                                                /* return error */
     }
-    if (handle->inited != 1)        /* check handle initialization */
+    if (handle->inited != 1)                                     /* check handle initialization */
     {
-        return 3;                   /* return error */
+        return 3;                                                /* return error */
     }
     
-    *ms = (float)(reg * 2.67f);     /* convert */
+    if (reg != 0)                                                /* check value */
+    {
+        *ms = (float)(powf(2.0f, (float)(reg - 1)) * 2.67f);     /* convert */
+    }
+    else
+    {
+        *ms = 0.0f;                                              /* set 0.0f */
+    }
     
-    return 0;                       /* success return 0 */
+    return 0;                                                    /* success return 0 */
 }
 
 /**

@@ -234,8 +234,8 @@ typedef enum
  */
 typedef enum
 {
-    WM8978_DAC_OVERSAMPLE_RATE_64X  = 0x00,        /**< 64x, lowest power */
-    WM8978_DAC_OVERSAMPLE_RATE_128X = 0x01,        /**< 128x, lowest power */
+    WM8978_DAC_OVERSAMPLE_RATE_64X  = 0x00,        /**< 64x */
+    WM8978_DAC_OVERSAMPLE_RATE_128X = 0x01,        /**< 128x */
 } wm8978_dac_oversample_rate_t;
 
 /**
